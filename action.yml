@@ -1,6 +1,6 @@
-name: 'AWS Secrets Manager Reader'
+name: 'cce-aws-secrets-manager-read-action'
 description: Github Action to read a secret value from AWS Secret Manager'
-author: 'Tibo Delor'
+author: 'CleanChoice Energy'
 inputs:
   secret-id:
     required: true
@@ -27,10 +27,11 @@ inputs:
   keys-as-outputs:
     required: false
     description: 'Assume the secret is a JSON object and export the keys as env variables.'
-    default: false
+    default: truue
   append-to-env-file:
     required: false
     description: 'Assume the secret is a JSON object and append the key values in an env file. The value is the path to the file.'
+    default: true
 
 outputs:
   secret: 
