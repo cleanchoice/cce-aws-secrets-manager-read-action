@@ -77,7 +77,7 @@ function exportKeys(
     }
     if (keysAsOutputs) {
       core.debug(`Setting output ${key}`)
-      core.setOutput(key, valueAsString)
+      core.setOutput(key, valueAsString);
     }
   }
 }
@@ -126,7 +126,7 @@ async function run(): Promise<void> {
     } else {
       core.debug('SecretString is undefined')
     }
-    core.setOutput('secret', response.SecretString)
+    core.setOutput('secret', response.SecretString);
   } catch (error) {
     if (error instanceof Error) core.setFailed(error)
     else core.setFailed(`Unexpected error: ${error}`)
