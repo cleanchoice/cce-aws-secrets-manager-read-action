@@ -18,7 +18,7 @@ fi
 
 
 docker build -t act-with-awscli - <<EOF
-FROM node:16-buster-slim
+FROM node:24-bookworm-slim
 
 RUN apt-get update && \
     apt -y install curl unzip groff less && \

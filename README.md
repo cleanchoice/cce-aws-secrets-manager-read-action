@@ -6,6 +6,10 @@
 
 Use this action to read a secret value from AWS Secret Manager.
 
+## Development Requirements
+
+- Node.js 24.x
+
 This action assume that:
 
 - The credentials are in place (see [aws-actions/configure-aws-credentials](https://github.com/aws-actions/configure-aws-credentials))
